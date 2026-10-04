@@ -175,7 +175,7 @@ int main(int argc, char* argv[])
     }
 
     // load the shader code from the external GLSL files
-    g_ShaderManager->LoadShaders("../Utilities/shaders/vertexShader.glsl", "../Utilities/shaders/fragmentShader.glsl");
+    g_ShaderManager->LoadShaders("shaders/vertexShader.glsl", "shaders/fragmentShader.glsl");
     g_ShaderManager->use();
 
     // try to create a new scene manager object and prepare the 3D scene

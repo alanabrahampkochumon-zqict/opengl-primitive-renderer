@@ -33,7 +33,7 @@ struct TextureParam
 
 
 /// Path to the texture with a terminating /
-constexpr auto gTexturePath = "../Utilities/textures/";
+constexpr auto gTexturePath = "textures/";
 
 /// Vector of all available textures
 const std::vector<TextureParam> gTextures = {

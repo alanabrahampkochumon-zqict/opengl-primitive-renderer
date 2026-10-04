@@ -53,7 +53,7 @@ private:
     // pointer to basic shapes object
     ShapeMeshes* m_basicMeshes;
     // total number of loaded textures
-    int m_loadedTextures;
+    int m_loadedTextures{0};
     // loaded textures info
     TEXTURE_INFO m_textureIDs[16];
     // defined object materials

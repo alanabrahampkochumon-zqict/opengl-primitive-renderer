@@ -26,3 +26,13 @@ target_link_libraries(OpenGLRenderer PUBLIC
         imgui
         stb
 )
+
+add_custom_command(
+        TARGET OpenGLRenderer
+        POST_BUILD
+        COMMAND ${CMAKE_COMMAND} -E
+        copy_directory
+        "${CMAKE_CURRENT_SOURCE_DIR}/res"
+        "$<TARGET_FILE_DIR:OpenGLRenderer>"
+        COMMENT "Copying resources to build directory..."
+)

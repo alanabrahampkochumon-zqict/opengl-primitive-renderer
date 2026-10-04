@@ -29,7 +29,5 @@ if(IPO_SUPPORTED)
 endif ()
 
 add_subdirectory(src)
-add_subdirectory(tests)
-add_subdirectory(benchmarks)
 
 set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT TestSuite)

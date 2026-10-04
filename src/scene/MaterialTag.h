@@ -2,6 +2,7 @@
 
 #include <string>
 #include <cstdint>
+#include <stdexcept>
 
 /// <summary>
 /// Type safe version of material tags.

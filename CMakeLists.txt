@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.25)
-project(GenericProject LANGUAGES CXX)
+project(OpenGLRenderer LANGUAGES C CXX)
 enable_testing()
 
 
@@ -9,10 +9,6 @@ set_property(GLOBAL PROPERTY USE_FOLDERS ON)
 set(DevToolsDir "Dev Tools")
 include(cmake/ClangFormat.cmake)
 include(cmake/ClangTidy.cmake)
-include(cmake/Doxygen.cmake)
-include(cmake/StrictMode.cmake)
-include(cmake/Asan.cmake)
-include(cmake/Dependencies.cmake)
 
 # Multi-processor compilation
 if (MSVC AND NOT CMAKE_CXX_COMPILER_ID MATCHES "Clang")
@@ -28,6 +24,7 @@ if(IPO_SUPPORTED)
     set(CMAKE_INTERPROCEDURAL_OPTIMIZATION ${IPO_SUPPORTED})
 endif ()
 
+add_subdirectory(external)
 add_subdirectory(src)
 
-set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT TestSuite)
+set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT OpenGLRenderer)

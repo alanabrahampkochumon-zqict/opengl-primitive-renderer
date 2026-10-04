@@ -17,5 +17,12 @@ add_executable(OpenGLRenderer
         utils/ShaderManager.h
 )
 
-target_include_directories(OpenGLRenderer PRIVATE "${CMAKE_CURRENT_SOURCE_DIR}/external/")
-target_link_libraries(glm::glm_static)
+target_include_directories(OpenGLRenderer PRIVATE ${CMAKE_CURRENT_LIST_DIR})
+
+target_link_libraries(OpenGLRenderer PUBLIC
+        libglew_static
+        glfw
+        glm::glm
+        imgui
+        stb
+)

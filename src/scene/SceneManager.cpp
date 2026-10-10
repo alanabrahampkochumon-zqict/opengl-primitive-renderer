@@ -581,22 +581,6 @@ void SceneManager::PrepareMeshes()
     // add ground plane to meshes
     m_meshes.push_back(groundPlane);
 
-
-    Mesh lightOne{ Shape::HalfSphere, "Light Amb" };
-    lightOne.m_material = MaterialTag::WOOD;
-    lightOne.m_position = { -5.0f, 18.0f, -12.0f };
-    m_meshes.push_back(lightOne);
-
-    Mesh lightTwo{ Shape::HalfSphere, "Light Left" };
-    lightTwo.m_material = MaterialTag::MATTE_PLASTIC;
-    lightTwo.m_position = { -19.0f, 13.5f, -5.0f };
-    m_meshes.push_back(lightTwo);
-
-    Mesh lightThree{ Shape::HalfSphere, "Light Right" };
-    lightThree.m_material = MaterialTag::MATTE_PLASTIC;
-    lightThree.m_position = { 19.0f, 13.5f, -3.0f };
-    m_meshes.push_back(lightThree);
-
     AddBookToScene();
     AddLaptopToScene();
     AddStickNoteToScene();

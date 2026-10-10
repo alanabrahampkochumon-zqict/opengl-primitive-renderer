@@ -8,11 +8,6 @@
 ///////////////////////////////////////////////////////////////////////////////
 
 #include "SceneManager.h"
-//
-// #ifndef STB_IMAGE_IMPLEMENTATION
-//     #define STB_IMAGE_IMPLEMENTATION
-//     #include "stb_image.h"
-// #endif
 #include <stb_image.h>
 #include <glm/gtx/transform.hpp>
 #include <imgui.h>
@@ -388,13 +383,6 @@ void SceneManager::LoadSceneTextures()
     // are a total of 16 available slots for scene textures
     BindGLTextures();
 }
-
-/**************************************************************/
-/*** STUDENTS CAN MODIFY the code in the methods BELOW for  ***/
-/*** preparing and rendering their own 3D replicated scenes.***/
-/*** Please refer to the code in the OpenGL sample project  ***/
-/*** for assistance.                                        ***/
-/**************************************************************/
 
 
 /***********************************************************

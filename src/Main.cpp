@@ -24,7 +24,7 @@
 namespace
 {
     // Macro for window title
-    const char* const WINDOW_TITLE = "7-1 FinalProject and Milestones";
+    const char* const WINDOW_TITLE = "OpenGL Renderer";
 
     // Main GLFW window
     GLFWwindow* g_Window = nullptr;

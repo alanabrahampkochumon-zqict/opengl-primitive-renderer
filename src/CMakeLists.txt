@@ -1,3 +1,4 @@
+option(IMGUI_DEBUG_WINDOW "Turn of Imgui Debug Window" OFF)
 add_executable(OpenGLRenderer
         # Source Files
         3dshapes/ShapeMeshes.cpp
@@ -16,6 +17,11 @@ add_executable(OpenGLRenderer
         utils/camera.h
         utils/ShaderManager.h
 )
+
+
+if(IMGUI_DEBUG_WINDOW)
+    target_compile_definitions(OpenGLRenderer PRIVATE ENABLE_IMGUI)
+endif ()
 
 target_include_directories(OpenGLRenderer PRIVATE ${CMAKE_CURRENT_LIST_DIR})
 

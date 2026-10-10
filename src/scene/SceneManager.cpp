@@ -17,8 +17,6 @@
 #include <glm/gtx/transform.hpp>
 #include <imgui.h>
 
-#define ENABLE_IMGUI // Enables ImGui for building the scene faster
-
 
 // declaration of global variables
 namespace

@@ -5,11 +5,13 @@
 #include <imgui.h>
 #include <imgui_impl_glfw.h>
 #include <imgui_impl_opengl3.h>
-#define ENABLE_IMGUI // Enables ImGui for building the scene faster
 
 
 #include <GL/glew.h> // GLEW library
 #include <GLFW/glfw3.h> // GLFW
+#ifdef IMGUI_ENABLE
+    hello
+#endif
 
 // GLM Math Header inclusions
 #include "3dshapes/ShapeMeshes.h"

@@ -9,9 +9,6 @@
 
 #include <GL/glew.h> // GLEW library
 #include <GLFW/glfw3.h> // GLFW
-#ifdef IMGUI_ENABLE
-    hello
-#endif
 
 // GLM Math Header inclusions
 #include "3dshapes/ShapeMeshes.h"
